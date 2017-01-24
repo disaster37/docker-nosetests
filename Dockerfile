@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
 
 
 # Install some usefull pip module
-Run pip install elasticsearch
+Run pip3 install elasticsearch
 
 
 ENV PYTHONIOENCODING utf-8
