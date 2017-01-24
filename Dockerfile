@@ -11,13 +11,10 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
 
-<<<<<<< HEAD
+
 # Install some usefull pip module
-pip install elasticsearch
-=======
-# Add some usefull python module
-RUN pip install elasticsearch
->>>>>>> release/3.0.1
+Run pip install elasticsearch
+
 
 ENV PYTHONIOENCODING utf-8
 WORKDIR /code
