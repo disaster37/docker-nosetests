@@ -2,6 +2,8 @@ FROM ubuntu:16.04
 MAINTAINER Sebastien Langoureaux <linuxworkgroup@hotmail.com> base on JP <jportela@abyssal.eu>
 ENV LANG en_US.utf8
 
+ENV LC_ALL C
+
 RUN apt-get update && apt-get install --no-install-recommends -yq \
     python3-all \
     python3-pip \
@@ -11,13 +13,10 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
 
-<<<<<<< HEAD
+
 # Install some usefull pip module
-pip install elasticsearch
-=======
-# Add some usefull python module
-RUN pip install elasticsearch
->>>>>>> release/3.0.1
+Run pip3 install elasticsearch
+
 
 ENV PYTHONIOENCODING utf-8
 WORKDIR /code
