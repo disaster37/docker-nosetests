@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
     python3-nose \
     python3-mock \
     libpq-dev \
+    curl \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
 
