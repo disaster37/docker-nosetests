@@ -9,13 +9,12 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
     python3-pip \
     python3-nose \
     python3-mock \
+    python3-setuptools
     libpq-dev \
     curl \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
 
-# Install some usefull pip module
-Run pip3 install elasticsearch
 
 ENV PYTHONIOENCODING utf-8
 WORKDIR /code
