@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install --no-install-recommends -yq \
     python3-pip \
     python3-nose \
     python3-mock \
-    python3-setuptools
+    python3-setuptools \
     libpq-dev \
     curl \
 && apt-get clean \
