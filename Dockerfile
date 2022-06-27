@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:22.04
 MAINTAINER Sebastien Langoureaux <linuxworkgroup@hotmail.com> base on JP <jportela@abyssal.eu>
 ENV LANG en_US.utf8
 
